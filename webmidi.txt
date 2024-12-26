@@ -1,0 +1,35 @@
+﻿// Audio aufnehmen und abspielen
+let audioContext = new (window.AudioContext || window.webkitAudioContext)();
+let analyser = audioContext.createAnalyser();
+let input = null;
+
+
+navigator.mediaDevices.getUserMedia({ audio: true })
+  .then(function(stream) {
+    input = audioContext.createMediaStreamSource(stream);
+    input.connect(analyser);
+    let buffer = audioContext.createBufferSource();
+    buffer.buffer = audioContext.createBuffer(1, 44100, 44100); // Beispiel-Puffer
+    buffer.connect(audioContext.destination);
+    buffer.start();
+  })
+  .catch(function(err) {
+    console.log("Audio Error: " + err);
+  });
+
+
+// MIDI Eingabe mit WebMIDI
+if (navigator.requestMIDIAccess) {
+  navigator.requestMIDIAccess()
+    .then(function(midiAccess) {
+      midiAccess.inputs.forEach(function(input) {
+        input.onmidimessage = function(message) {
+          let data = message.data;
+          console.log("MIDI Nachricht: ", data);
+        };
+      });
+    })
+    .catch(function(err) {
+      console.log("MIDI Error: " + err);
+    });
+}

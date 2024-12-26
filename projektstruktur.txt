@@ -1,0 +1,13 @@
+﻿/audio-midi-looper
+  /public
+    index.html      # Haupt-HTML-Datei
+  /src
+    /assets          # Sample-Dateien (MP3, WAV)
+    /components      # Wiederverwendbare UI-Komponenten
+    /effects         # Effekte und Equalizer-Logik
+    /utils           # Hilfsfunktionen (z.B. MIDI- und Audio-Handling)
+    /App.js          # Hauptkomponente
+    /index.js        # Einstiegspunkt der Anwendung
+  /styles
+    main.css         # Styles für das dunkle Design
+  /package.json      # Projektmetadaten und Abhängigkeiten

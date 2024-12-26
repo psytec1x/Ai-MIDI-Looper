@@ -1,0 +1,15 @@
+﻿const gainNode = audioContext.createGain();
+const reverbNode = audioContext.createConvolver();
+const eqNode = audioContext.createBiquadFilter();
+
+
+gainNode.gain.value = 0.8;  // Lautstärke einstellen
+reverbNode.buffer = reverbBuffer;  // Reverb einstellen
+eqNode.type = 'lowpass';  // EQ-Typ: z.B. Tiefpassfilter
+
+
+// Effektkette erstellen
+audioContext.createGain()
+  .connect(reverbNode)
+  .connect(eqNode)
+  .connect(audioContext.destination);
