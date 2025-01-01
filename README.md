@@ -5,10 +5,10 @@ https://theee.ai/tools/Build-A-Working-Web-App-with-AI-ZxX4Fp6B
 
 PROMPT:
 
-You
-ein Audio/Midi Looper mit 8 Spuren. die loops können per audio in über die System Soundkarte aufgenommen werden. das audio kommt von am pc angeschlossenen hardware instrumenten. diese werden über webmidi und audio in im chrome browser erkannt.  zusätzlich kann man noch weitere spuren erstellen die als audiospuren fungieren. dort kann man mp3 und wave samples von seinen eigenen dateien auswählen und einfügen. jede spur kann mit drehreglern individuell bearbeitet werden mit effekten und einem equalizer sowie die länge des samples oder des audios. gebe dem ganzen ein modernes aussehen in einem dunklen design.
+You:
+erstelle ein Audio/Midi Looper mit 8 Spuren. die loops können per audio in über die System Soundkarte aufgenommen werden. das audio kommt von am pc angeschlossenen hardware instrumenten. diese werden über webmidi und audio in im chrome browser erkannt.  zusätzlich kann man noch weitere spuren erstellen die als audiospuren fungieren. dort kann man mp3 und wave samples von seinen eigenen dateien auswählen und einfügen. jede spur kann mit drehreglern individuell bearbeitet werden mit effekten und einem equalizer sowie die länge des samples oder des audios. gebe dem ganzen ein modernes aussehen in einem dunklen design.
 
-
+KI:
 Das klingt nach einer komplexen und sehr spannenden Anwendung! Ich werde eine grobe Übersicht und Architektur für die von dir beschriebenen Anforderungen skizzieren. Diese Skizze bezieht sich auf den technischen Aufbau und die Benutzeroberfläche für einen Audio/MIDI Looper mit 8 Spuren, wobei es Audioeingänge aus Hardware-Instrumenten gibt und gleichzeitig die Möglichkeit besteht, MP3- und WAV-Dateien als Samples hinzuzufügen und zu bearbeiten.
 
 ### Überblick der Funktionen:
