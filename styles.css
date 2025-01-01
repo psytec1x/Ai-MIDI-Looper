@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>styles</title></head><body>
+  /* Allgemeines Design */<br>
+body {<br>
+&nbsp; background-color: #1E1E1E;<br>
+&nbsp; color: #FFFFFF;<br>
+&nbsp; font-family: 'Roboto', sans-serif;<br>
+&nbsp; margin: 0;<br>
+&nbsp; padding: 20px;<br>
+}<br>
+<br>
+h1 {<br>
+&nbsp; color: #00FF00;<br>
+}<br>
+<br>
+#app {<br>
+&nbsp; max-width: 800px;<br>
+&nbsp; margin: 0 auto;<br>
+}<br>
+<br>
+/* Spuren */<br>
+.track {<br>
+&nbsp; background-color: #333;<br>
+&nbsp; padding: 10px;<br>
+&nbsp; margin-bottom: 10px;<br>
+&nbsp; border-radius: 5px;<br>
+}<br>
+<br>
+.track-controls {<br>
+&nbsp; display: flex;<br>
+&nbsp; align-items: center;<br>
+&nbsp; gap: 10px;<br>
+&nbsp; margin-bottom: 10px;<br>
+}<br>
+<br>
+.track-controls input[type="range"] {<br>
+&nbsp; width: 100px;<br>
+}<br>
+<br>
+.track-controls button {<br>
+&nbsp; background-color: #00FF00;<br>
+&nbsp; border: none;<br>
+&nbsp; padding: 5px 10px;<br>
+&nbsp; cursor: pointer;<br>
+&nbsp; border-radius: 3px;<br>
+}<br>
+<br>
+.waveform {<br>
+&nbsp; width: 100%;<br>
+&nbsp; height: 100px;<br>
+&nbsp; background-color: #444;<br>
+&nbsp; position: relative;<br>
+&nbsp; cursor: pointer;<br>
+}<br>
+<br>
+.waveform canvas {<br>
+&nbsp; width: 100%;<br>
+&nbsp; height: 100%;<br>
+}<br>
+<br>
+.loop-marker {<br>
+&nbsp; position: absolute;<br>
+&nbsp; top: 0;<br>
+&nbsp; bottom: 0;<br>
+&nbsp; background-color: rgba(255, 255, 255, 0.3);<br>
+&nbsp; border-left: 2px solid #00FF00;<br>
+&nbsp; border-right: 2px solid #00FF00;<br>
+}<br>
+<br>
+/* Globale Steuerung */<br>
+#global-controls {<br>
+&nbsp; margin-bottom: 20px;<br>
+&nbsp; display: flex;<br>
+&nbsp; gap: 10px;<br>
+}<br>
+<br>
+#global-controls button {<br>
+&nbsp; background-color: #FFA500;<br>
+&nbsp; border: none;<br>
+&nbsp; padding: 10px 20px;<br>
+&nbsp; cursor: pointer;<br>
+&nbsp; border-radius: 3px;<br>
+}<br>
+<br>
+/* Sample-Browser */<br>
+#sample-browser {<br>
+&nbsp; margin-top: 20px;<br>
+}<br>
+<br>
+#sample-browser input[type="file"] {<br>
+&nbsp; display: none;<br>
+}<br>
+<br>
+#sample-browser button {<br>
+&nbsp; background-color: #00FF00;<br>
+&nbsp; border: none;<br>
+&nbsp; padding: 10px 20px;<br>
+&nbsp; cursor: pointer;<br>
+&nbsp; border-radius: 3px;<br>
+}<br>
+
+</body></html>
